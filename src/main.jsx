@@ -13,7 +13,7 @@ import Contact from './pages/Contact.jsx'
 const router = createBrowserRouter(
   [
     {
-      path: import.meta.env.BASE_URL + '/',
+      path: import.meta.env.BASE_URL,
       element: <App />,
       children: [
         { index: true, element: <Home /> },
