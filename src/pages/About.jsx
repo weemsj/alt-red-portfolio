@@ -15,7 +15,11 @@ export default function About(){
         <li>Photography — Sony A-series enthusiast</li>
       </ul>
       <p>
-        <a className="inline-flex items-center rounded-full px-4 py-2 bg-altred-primary text-white" href="/resume.pdf" download>
+        <a
+          className="inline-flex items-center rounded-full px-4 py-2 bg-altred-primary text-white"
+          href={`${import.meta.env.BASE_URL}resume.pdf`}
+          download
+        >
           Download Resume (PDF)
         </a>
       </p>
