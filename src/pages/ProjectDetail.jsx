@@ -27,7 +27,7 @@ export default function ProjectDetail(){
     <article className="space-y-6">
       <header className="space-y-2">
         <h1 className="text-3xl font-extrabold">{title}</h1>
-        <p className="text-gray-600 dark:text-gray-300">{blurb}</p>
+        <p className="font-mono text-sm text-gray-600 dark:text-gray-300">{blurb}</p>
         <div className="flex flex-wrap mt-2">{(tech||[]).map(t => <Badge key={t}>{t}</Badge>)}</div>
         <div className="flex gap-4 text-sm">
           {repoUrl && <a className="hover:underline" href={repoUrl} target="_blank" rel="noreferrer">GitHub Repo ↗</a>}
