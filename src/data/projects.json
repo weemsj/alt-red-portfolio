@@ -4,41 +4,60 @@
     "slug": "shelflife",
     "blurb": "Inventory insights with Flask + React/Vite and GCP.",
     "tags": [
-      "Web",
-      "Data"
+      "Full Stack",
+      "Data",
+      "Python",
+      "API",
+      "Design"
     ],
     "tech": [
       "React",
       "Vite",
       "Flask",
-      "GCP"
+      "GCP",
+      "CI/CD",
+      "GitHub Actions",
+      "HTML/CSS",
+      "Chakra UI",
+      "Flask",
+      "@zxing/Library",
+      "MySQL",
+      "SQLAlchemy ORM",
+      "Fatsecret API",
+      "OpenAI",
+      "OAuth 2.0",
+      "JWT tokens",
+      "Secret Manager"
     ],
-    "youtubeId": "dQw4w9WgXcQ",
+    "youtubeId": "dcYpg9gY2dk",
     "images": [
-      "https://via.placeholder.com/1200x675?text=ShelfLife+1",
-      "https://via.placeholder.com/1200x675?text=ShelfLife+2"
+      "/ShelfLife-Poster.jpg",
+      "/User Dashboard.jpg"
     ],
-    "repoUrl": "https://github.com/you/shelflife",
-    "demoUrl": ""
+    "repoUrl": "https://github.com/6dayspizza/CS467_smartgroceryhousekeeping",
+    "demoUrl": "",
+    "projectDocsUrl": "https://drive.google.com/file/d/1TG8EPZnk3b8w4F4XSWZFUN4MczLiNHkw/view?usp=drive_link"
   },
   {
-    "title": "Community Unite Website",
+    "title": "Community Unite Foundation Website",
     "slug": "cuf-site",
-    "blurb": "Nonprofit site and data plumbing for Community Unite Foundation.",
+    "blurb": "Nonprofit SquareSpace for Community Unite Foundation.",
     "tags": [
       "Web",
       "Design"
     ],
     "tech": [
-      "React",
-      "Tailwind",
-      "Actions"
+      "SquareSpace",
+      "Custom HTML",
+      "Plug-Ins"
     ],
     "youtubeId": "",
     "images": [
-      "https://via.placeholder.com/1200x675?text=CUF+Homepage"
+      "/CUF_SS1.png",
+      "/CUF_SS2.png"
     ],
     "repoUrl": "",
     "demoUrl": "https://communityunitefoundation.com"
+    "projectDocsUrl": ""
   }
 ]

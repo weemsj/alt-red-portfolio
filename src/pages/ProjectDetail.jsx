@@ -12,7 +12,16 @@ export default function ProjectDetail(){
 
   if (!project) return <p>Project not found.</p>
 
-  const { title, blurb, tech, youtubeId, images = [], repoUrl, demoUrl } = project
+  const { title, blurb, tech, youtubeId, images = [], repoUrl, demoUrl, projectDocsUrl } = project
+
+  const resolveSrc = React.useCallback((src) => {
+    if (!src) return src
+    if (/^https?:\/\//i.test(src)) return src
+    const base = import.meta.env.BASE_URL || '/'
+    return `${base.replace(/\/$/, '')}/${src.replace(/^\//, '')}`
+  }, [])
+
+  const resolvedImages = images.map(resolveSrc)
 
   return (
     <article className="space-y-6">
@@ -23,6 +32,7 @@ export default function ProjectDetail(){
         <div className="flex gap-4 text-sm">
           {repoUrl && <a className="hover:underline" href={repoUrl} target="_blank" rel="noreferrer">GitHub Repo ↗</a>}
           {demoUrl && <a className="hover:underline" href={demoUrl} target="_blank" rel="noreferrer">Live Demo ↗</a>}
+          {projectDocsUrl && <a className="hover:underline" href={projectDocsUrl} target="_blank" rel="noreferrer">Project Documentation ↗</a>}
         </div>
       </header>
 
@@ -38,9 +48,9 @@ export default function ProjectDetail(){
         </div>
       )}
 
-      {images.length > 0 && (
+      {resolvedImages.length > 0 && (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {images.map((src, i) => (
+          {resolvedImages.map((src, i) => (
             <button key={i} onClick={()=>setLightbox(src)} className="block rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
               <img src={src} alt={`${title} screenshot ${i+1}`} className="w-full h-full object-cover" loading="lazy" />
             </button>
@@ -48,7 +58,7 @@ export default function ProjectDetail(){
         </div>
       )}
 
-      <Lightbox src={lightbox} onClose={()=>setLightbox(null)} />
+      <Lightbox src={resolveSrc(lightbox)} onClose={()=>setLightbox(null)} />
     </article>
   )
 }
