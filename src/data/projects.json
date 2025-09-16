@@ -1,0 +1,44 @@
+[
+  {
+    "title": "ShelfLife",
+    "slug": "shelflife",
+    "blurb": "Inventory insights with Flask + React/Vite and GCP.",
+    "tags": [
+      "Web",
+      "Data"
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "Flask",
+      "GCP"
+    ],
+    "youtubeId": "dQw4w9WgXcQ",
+    "images": [
+      "https://via.placeholder.com/1200x675?text=ShelfLife+1",
+      "https://via.placeholder.com/1200x675?text=ShelfLife+2"
+    ],
+    "repoUrl": "https://github.com/you/shelflife",
+    "demoUrl": ""
+  },
+  {
+    "title": "Community Unite Website",
+    "slug": "cuf-site",
+    "blurb": "Nonprofit site and data plumbing for Community Unite Foundation.",
+    "tags": [
+      "Web",
+      "Design"
+    ],
+    "tech": [
+      "React",
+      "Tailwind",
+      "Actions"
+    ],
+    "youtubeId": "",
+    "images": [
+      "https://via.placeholder.com/1200x675?text=CUF+Homepage"
+    ],
+    "repoUrl": "https://github.com/you/cuf",
+    "demoUrl": "https://communityunitefoundation.com"
+  }
+]

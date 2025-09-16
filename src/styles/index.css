@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root { height: 100%; }
+
+/* Base typography */
+.prose a { @apply text-altred-primary underline; }
+
+/* Focus ring */
+.focus-ring { @apply outline outline-2 outline-offset-2 outline-altred-primary; }
