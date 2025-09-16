@@ -10,20 +10,25 @@ import About from './pages/About.jsx'
 import WorkInProgress from './pages/WorkInProgress.jsx'
 import Contact from './pages/Contact.jsx'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'projects', element: <Projects /> },
+        { path: 'projects/:slug', element: <ProjectDetail /> },
+        { path: 'about', element: <About /> },
+        { path: 'work-in-progress', element: <WorkInProgress /> },
+        { path: 'contact', element: <Contact /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'projects', element: <Projects /> },
-      { path: 'projects/:slug', element: <ProjectDetail /> },
-      { path: 'about', element: <About /> },
-      { path: 'work-in-progress', element: <WorkInProgress /> },
-      { path: 'contact', element: <Contact /> },
-    ],
-  },
-])
+    basename: import.meta.env.BASE_URL,
+  }
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
