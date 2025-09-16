@@ -12,7 +12,7 @@ export default function Home(){
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
           Alt_<span className="text-altred-primary">Red</span>
         </h1>
-        <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="font-mono text-sm text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
           Edgy, sleek, outgoing portfolio of projects spanning web and data—where the alternate ego ships.
         </p>
         <div className="flex items-center justify-center gap-3">
@@ -31,7 +31,7 @@ export default function Home(){
 
       <div className="mt-12 rounded-2xl border border-black/10 dark:border-white/10 p-6 bg-white dark:bg-altred-ink">
         <h3 className="text-lg font-semibold">Work In Progress</h3>
-        <p className="text-gray-600 dark:text-gray-300">Peek at what's brewing on the bench—early ideas and experiments.</p>
+        <p className="font-mono text-sm text-gray-600 dark:text-gray-300">Peek at what's brewing on the bench—early ideas and experiments.</p>
         <Link to="/work-in-progress" className="inline-block mt-3 hover:underline">Explore WIP →</Link>
       </div>
     </section>

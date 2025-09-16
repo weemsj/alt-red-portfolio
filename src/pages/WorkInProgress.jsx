@@ -13,8 +13,8 @@ export default function WorkInProgress(){
         {wip.map((item, i) => (
           <li key={i} className="rounded-2xl border border-black/10 dark:border-white/10 p-4 bg-white dark:bg-altred-ink">
             <h3 className="font-semibold">{item.title}</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{item.status}</p>
-            <p className="text-xs text-gray-500 dark:text-gray-400">ETA: {item.eta}</p>
+            <p className="font-mono text-sm text-gray-600 dark:text-gray-300">{item.status}</p>
+            <p className="font-mono text-xs text-gray-500 dark:text-gray-400">ETA: {item.eta}</p>
           </li>
         ))}
       </ul>

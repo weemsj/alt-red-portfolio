@@ -18,8 +18,8 @@ export default function ProjectCard({ project }) {
         <img src={thumb} alt={title} className="w-full h-full object-cover group-hover:opacity-90 transition" loading="lazy" />
       </div>
       <div className="p-4">
-        <h3 className="font-semibold text-lg">{title}</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">{blurb}</p>
+        <h3 className="font-sans font-semibold text-lg">{title}</h3>
+        <p className="font-mono text-sm text-gray-600 dark:text-gray-300 mt-1">{blurb}</p>
         <div className="mt-3 flex flex-wrap">
           {(tags || []).map(t => <Badge key={t}>{t}</Badge>)}
         </div>
