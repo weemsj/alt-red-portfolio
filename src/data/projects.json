@@ -98,9 +98,25 @@
   "youtubeId": "njKdQBDByrM",
   "images": [
     "/treasurehunt-1.jpg",
-    "/img/treasurehunt-2.jpg"
+    "/treasurehunt-2.jpg",
+    "/treasurehunt-3.jpg"
   ],
   "repoUrl": "https://github.com/yourusername/mobile-treasure-hunt",
+  "demoUrl": ""
+},
+{
+  "title": "smallsh",
+  "slug": "smallsh",
+  "blurb": "A lightweight Unix-style shell in C with process management, I/O redirection, and signal handling.",
+  "tags": ["Systems", "C"],
+  "tech": ["C", "Linux", "Processes", "Signals"],
+  "youtubeId": "",
+  "images": [
+    "smallshell-1.png",
+    "smallshell-2.png",
+    "smallshell-3.png"
+  ],
+  "repoUrl": "https://github.com/weemsj/small_shell",
   "demoUrl": ""
 }
 ]
