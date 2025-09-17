@@ -19,14 +19,13 @@
       "GitHub Actions",
       "HTML/CSS",
       "Chakra UI",
-      "Flask",
       "@zxing/Library",
       "MySQL",
       "SQLAlchemy ORM",
       "Fatsecret API",
       "OpenAI",
-      "OAuth 2.0",
-      "JWT tokens",
+      "OAuth2.0",
+      "JWT",
       "Secret Manager"
     ],
     "youtubeId": "dcYpg9gY2dk",
@@ -59,5 +58,49 @@
     "repoUrl": "",
     "demoUrl": "https://www.communityunitefoundation.com",
     "projectDocsUrl": ""
-  }
+  },
+  {
+    "title": "Tarpaulin Course Management Tool",
+    "slug": "taurpauline",
+    "blurb": "A lightweight course management API on Google Cloud, with secure authentication and role-based access for admins, instructors, and students.",
+    "tags": [
+      "Backend",
+      "Data",
+      "Python",
+      "API",
+      "NoSQL"
+    ],
+    "tech": [
+      "Python",
+      "Flask",
+      "GCP",
+      "Datastore",
+      "Storage",
+      "OAuth2.0",
+      "JWT",
+      "Postman"
+    ],
+    "youtubeId": "",
+    "images": [
+      "/Tarpaulin-Screenshot.png",
+      ""
+    ],
+    "repoUrl": "https://github.com/weemsj/Tarpaulin",
+    "demoUrl": "",
+    "projectDocsUrl": ""
+  },
+  {
+  "title": "Mobile Treasure Hunt",
+  "slug": "mobile-treasure-hunt",
+  "blurb": "GPS-powered treasure hunt built with Kotlin + Jetpack Compose.",
+  "tags": ["Mobile", "Android"],
+  "tech": ["Kotlin", "Jetpack Compose", "Android Studio", "Location Services"],
+  "youtubeId": "njKdQBDByrM",
+  "images": [
+    "/treasurehunt-1.jpg",
+    "/img/treasurehunt-2.jpg"
+  ],
+  "repoUrl": "https://github.com/yourusername/mobile-treasure-hunt",
+  "demoUrl": ""
+}
 ]
