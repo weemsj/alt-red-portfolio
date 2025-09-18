@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      const pathSegmentsToKeep = 1
+      const l = window.location
+      const baseUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '')
+      const repoSegments = l.pathname
+        .split('/')
+        .slice(0, 1 + pathSegmentsToKeep)
+        .join('/')
+      const targetSegments = l.pathname
+        .slice(1)
+        .split('/')
+        .slice(pathSegmentsToKeep)
+        .join('/')
+      const search = l.search
+        ? '&' + l.search.slice(1).replace(/&/g, '~and~')
+        : ''
+
+      l.replace(`${baseUrl}${repoSegments}/?/${targetSegments}${search}${l.hash}`)
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting…</h1>
+    <p>If you are not redirected automatically, <a href="/alt-red-portfolio/">go to the homepage</a>.</p>
+  </body>
+</html>

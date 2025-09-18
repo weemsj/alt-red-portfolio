@@ -8,6 +8,19 @@
     <meta property="og:description" content="Edgy, sleek, outgoing portfolio of Jacqueline Weems." />
     <meta property="og:type" content="website" />
     <title>Alt_Red — Portfolio</title>
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          const decoded = l.search
+            .slice(1)
+            .split('&')
+            .map((s) => s.replace(/~and~/g, '&'))
+            .join('?')
+          const newUrl = l.pathname.slice(0, -1) + decoded + l.hash
+          window.history.replaceState(null, null, newUrl)
+        }
+      })(window.location)
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
