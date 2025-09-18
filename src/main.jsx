@@ -11,11 +11,11 @@ import WorkInProgress from './pages/WorkInProgress.jsx'
 import Contact from './pages/Contact.jsx'
 import { base } from 'framer-motion/client'
 
-const basename = import.meta.env.BASE_URL
+const url = import.meta.env.BASE_URL
 const router = createBrowserRouter(
   [
     {
-      path: basename,
+      path: url,
       element: <App />,
       children: [
         { index: true, element: <Home /> },
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
       ],  
     },
   ], {
-    basename: basename
+    basename: url
   }
 )
 
