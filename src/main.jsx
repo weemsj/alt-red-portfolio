@@ -19,14 +19,16 @@ const router = createBrowserRouter(
       element: <App />,
       children: [
         { index: true, element: <Home /> },
-        { path: basename + 'projects', element: <Projects /> },
-        { path: basename + 'projects/:slug', element: <ProjectDetail /> },
-        { path: basename + 'about', element: <About /> },
-        { path: basename + 'work-in-progress', element: <WorkInProgress /> },
-        { path: basename + 'contact', element: <Contact /> },
-      ],
+        { path: 'projects', element: <Projects /> },
+        { path: 'projects/:slug', element: <ProjectDetail /> },
+        { path: 'about', element: <About /> },
+        { path: 'work-in-progress', element: <WorkInProgress /> },
+        { path: 'contact', element: <Contact /> },
+      ],  
     },
-  ],
+  ], {
+    basename: basename
+  }
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
