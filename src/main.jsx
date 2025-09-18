@@ -14,7 +14,7 @@ const basename = import.meta.env.BASE_URL
 const router = createBrowserRouter(
   [
     {
-      path: '/',
+      path: import.meta.env.BASE_URL,
       element: <App />,
       children: [
         { index: true, element: <Home /> },
