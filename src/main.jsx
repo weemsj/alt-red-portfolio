@@ -9,19 +9,21 @@ import ProjectDetail from './pages/ProjectDetail.jsx'
 import About from './pages/About.jsx'
 import WorkInProgress from './pages/WorkInProgress.jsx'
 import Contact from './pages/Contact.jsx'
+import { base } from 'framer-motion/client'
 
+const basename = import.meta.env.BASE_URL
 const router = createBrowserRouter(
   [
     {
-      path: import.meta.env.BASE_URL,
+      path: basename,
       element: <App />,
       children: [
         { index: true, element: <Home /> },
-        { path: 'projects', element: <Projects /> },
-        { path: 'projects/:slug', element: <ProjectDetail /> },
-        { path: 'about', element: <About /> },
-        { path: 'work-in-progress', element: <WorkInProgress /> },
-        { path: 'contact', element: <Contact /> },
+        { path: basename + 'projects', element: <Projects /> },
+        { path: basename + 'projects/:slug', element: <ProjectDetail /> },
+        { path: basename + 'about', element: <About /> },
+        { path: basename + 'work-in-progress', element: <WorkInProgress /> },
+        { path: basename + 'contact', element: <Contact /> },
       ],
     },
   ],
