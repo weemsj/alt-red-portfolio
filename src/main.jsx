@@ -10,6 +10,7 @@ import About from './pages/About.jsx'
 import WorkInProgress from './pages/WorkInProgress.jsx'
 import Contact from './pages/Contact.jsx'
 
+const basename = import.meta.env.BASE_URL
 const router = createBrowserRouter(
   [
     {
@@ -26,7 +27,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: import.meta.env.BASE_URL,
+    basename,
   }
 )
 
