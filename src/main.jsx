@@ -14,7 +14,7 @@ const basename = import.meta.env.BASE_URL
 const router = createBrowserRouter(
   [
     {
-      path: import.meta.env.BASE_URL,
+      path: basename + '/',
       element: <App />,
       children: [
         { index: true, element: <Home /> },
@@ -26,9 +26,6 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  {
-    basename,
-  }
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
