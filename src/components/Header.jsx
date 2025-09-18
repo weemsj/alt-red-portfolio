@@ -6,7 +6,7 @@ const LinkItem = ({ to, children }) => (
   <NavLink
     to={to}
     className={({isActive}) =>
-      `px-3 py-2 rounded-lg transition ${isActive ? 'bg-altred-primary text-white' : 'hover:bg-black/5 dark:hover:bg-white/10'}`
+      `font-mono text-sm px-3 py-2 rounded-lg transition ${isActive ? 'bg-altred-primary text-white' : 'hover:bg-black/5 dark:hover:bg-white/10'}`
     }>
     {children}
   </NavLink>
