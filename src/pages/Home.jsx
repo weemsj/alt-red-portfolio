@@ -16,8 +16,8 @@ export default function Home(){
           Edgy, sleek, outgoing portfolio of projects spanning web and data—where the alternate ego ships.
         </p>
         <div className="flex items-center justify-center gap-3">
-          <Button href={`${import.meta.env.BASE_URL}/projects`}>View Projects</Button>
-          <Button href={`${import.meta.env.BASE_URL}/about`} className="bg-black/80 dark:bg-white/10">About Me</Button>
+          <Button href={`${import.meta.env.BASE_URL}projects`}>View Projects</Button>
+          <Button href={`${import.meta.env.BASE_URL}about`} className="bg-black/80 dark:bg-white/10">About Me</Button>
         </div>
       </div>
 
