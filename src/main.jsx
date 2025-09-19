@@ -15,7 +15,7 @@ const url = import.meta.env.BASE_URL
 const router = createBrowserRouter(
   [
     {
-      path: url,
+      path: '/',
       element: <App />,
       children: [
         { index: true, element: <Home /> },
