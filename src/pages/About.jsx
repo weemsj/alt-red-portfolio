@@ -8,7 +8,7 @@ export default function About(){
       <div className="flex flex-col md:flex-row items-center gap-6 p-8">
         {/* Profile Image */}
         <img
-          src="/IMG_5020-2.jpg"
+          src={`${import.meta.env.BASE_URL}/IMG_5020-2.jpg`}
           alt="Jacqueline Weems — Alt_Red"
           className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-2xl shadow-card border-4 border-altred-primary"
         />
