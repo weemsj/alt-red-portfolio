@@ -20,6 +20,17 @@ export default function About(){
         <p className='font-mono text-md pb-4'>
           Hi — I'm Jacqueline. <strong>Alt_Red</strong> is my creative alter-ego: 
           the space where I ship bold, useful things at the intersection of business and tech.
+
+          I'm a computer scientist, strategist, and creator who thrives at the intersection of tech, business, and bold ideas.
+          With a B.S. in Computer Science from Oregon State University, I build projects that don't just run — they stand out.
+          My work spans full-stack applications, data systems, and digital experiences that drive impact for nonprofits, community ventures, and beyond.
+          My perspective is shaped by life across five countries, giving me an edge in adaptability and vision. 
+          Whether I'm engineering backend systems in Flask and PostgreSQL, designing sleek, high-energy interfaces in React,
+          or mapping out a roadmap for a grassroots initiative, I bring both precision and daring creativity.
+          Outside the code, I co-founded the Community Unite Foundation, where I lead digital strategy to expand opportunities for underserved youth.
+          I also explore storytelling through photography and design — creative outlets that fuel the energy behind Alt-Red.
+          At the core, I believe innovation happens when you disrupt the ordinary. 
+          Alt-Red is my space to showcase work that pushes boundaries — a mix of technology, strategy, and creativity built to inspire, connect, and challenge what's possible.
       </p>
         <h2 className='font-sans text-xl font-bold pb-4'>Informal Resume</h2>
           <ul>
